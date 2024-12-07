@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://meqimav624u6"]
+
+[ext_resource type="Script" path="res://core/controller/_controller.gd" id="1_4k5k4"]
+
+[node name="Controller" type="Node"]
+script = ExtResource("1_4k5k4")

@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0i7kio8pjl30"]
+
+[ext_resource type="Script" path="res://core/game_controller/game_controller.gd" id="1_3uacg"]
+[ext_resource type="Script" path="res://core/gui_controller/gui_controller.gd" id="2_ywylq"]
+[ext_resource type="PackedScene" uid="uid://dporhkfqle8hi" path="res://GUI/StartGui/StartGui.tscn" id="3_l1rkr"]
+
+[node name="GameController" type="Node"]
+script = ExtResource("1_3uacg")
+
+[node name="GuiController" type="Node" parent="." node_paths=PackedStringArray("guis")]
+script = ExtResource("2_ywylq")
+guis = [NodePath("StartGui")]
+
+[node name="StartGui" parent="GuiController" instance=ExtResource("3_l1rkr")]
+visible = false
